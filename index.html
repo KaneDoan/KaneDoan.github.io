@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Thang Doan</title>
+		<title>Kane Doan</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -14,11 +14,11 @@
 
 				<!-- Intro -->
 					<div id="intro">
-						<h1>Thang Doan</h1>
-						<p>Software Developer/Engineer</p>
+						<h1>Kane Doan</h1>
+						<p>Software Developer</p>
 						<ul class="icons">
-							<li><a href="linkedin.com/in/thang-kane-doan" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-							<li><a href="https://github.com/KaneDoan" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+							<li><a href="https://www.linkedin.com/in/thang-kane-doan/" target="_blank" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/KaneDoan" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
 						</ul>
 						<ul class="actions">
 							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
@@ -50,7 +50,7 @@
 								<header class="major">
 									<h2><a href="#about">About Me</a></h2>
 									<p>
-										Hello and welcome to my portfolio! I'm Thang Doan, also known as Kane, a software developer based in Brisbane, Australia.
+										Hello and welcome to my website! I'm Thang Doan, also known as Kane, a software developer based in Brisbane, Australia.
 									</p>
 									<p>
 										Ever since I played my first video game at the age of 5, I've been captivated by technology. This early passion ignited my interest in programming and developing software applications, driving me to constantly learn and explore new and exciting technologies.
@@ -59,13 +59,13 @@
 										
 										I am driven by the desire to create innovative and user-friendly software applications that solve real-world problems. With a strong foundation in programming and a keen eye for detail, I strive to deliver high-quality code and exceptional user experiences.
 										
-										Please explore my portfolio to see some of the projects I have worked on. I'm excited to showcase my skills, expertise, and commitment to delivering impactful software solutions.
+										Please explore my website to see some of the projects I have worked on. I'm excited to showcase my skills, expertise, and commitment to delivering impactful software solutions.
 										
 										Thank you for visiting, and I look forward to connecting with you!
 									</p>	
 								<a href="#" class="image main"><img src="images/me.jpg" alt="" /></a>
 								<ul class="actions special">
-									<li><a href="#footer" class="button large">Contact Me</a></li>
+									<li><a href="#footer" class="button large smooth-scroll">Contact Me</a></li>
 									<!--<li><a href="#portfolio" class="button large">See Portfolio</a></li !-->
 								</ul>
 							</article>
@@ -145,7 +145,7 @@
 											 <h4>Software Developer (Intern)</h4>
 											 <span>Brisbane, Australia</span>
 											</div>
-											<div class="c-date"><span>Aug 2021 - Oct 2022</span></div>
+											<div class="c-date"><span>Aug 2021 - Oct 2021</span></div>
 											<p>• Developing website and web application depend on requirement of senior developers.</p>
 										 </div>
 									   </li>
@@ -158,7 +158,7 @@
 											 <h4>Software Developer (Intern)</h4>
 											 <span>Brisbane, Australia</span>
 											</div>
-											<div class="c-date"><span>Aug 2021 - Oct 2022</span></div>
+											<div class="c-date"><span>June 2021 - Aug 2021</span></div>
 											<p>• Work with other team members to resolve and or escalate incidents / requests / user stories.</p>
 											<p>• Maintaining and improving existing websites and applications.</p>
 										 </div>
@@ -292,8 +292,8 @@
 								<section>
 									<h3>Social</h3>
 									<ul class="icons alt">
-										<li><a href="linkedin.com/in/thang-kane-doan" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-										<li><a href="https://github.com/KaneDoan" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+										<li><a href="https://www.linkedin.com/in/thang-kane-doan/" target="_blank" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+										<li><a href="https://github.com/KaneDoan" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
 									</ul>
 								</section>
 							</section>
@@ -314,6 +314,24 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>
+				// Select the link element with the smooth-scroll class
+				const smoothScrollLink = document.querySelector('.smooth-scroll');
+			  
+				// Add a click event listener to the link
+				smoothScrollLink.addEventListener('click', function (event) {
+				  event.preventDefault(); // Prevent the default jump-to-anchor behavior
+			  
+				  // Get the target element based on the href attribute of the link
+				  const targetElement = document.querySelector(this.getAttribute('href'));
+			  
+				  // Scroll smoothly to the target element
+				  targetElement.scrollIntoView({
+					behavior: 'smooth',
+					block: 'start',
+				  });
+				});
+			  </script>
 
 	</body>
 </html>
