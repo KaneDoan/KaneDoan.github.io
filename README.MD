@@ -1,1 +1,1 @@
-A simple one-page portfolio.
+My one-page portfolio.
